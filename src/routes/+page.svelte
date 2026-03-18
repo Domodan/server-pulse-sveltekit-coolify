@@ -3,11 +3,6 @@
 
     let { data } = $props();
 
-    // const handleSubmit = enhance(async ({ result }) => {
-    //     if (result.type === 'success') {
-    //         alert('Pulse posted');
-    //     }
-    // })
 </script>
 
 <div class="min-h-screen bg-gray-900 text-white p-8 flex flex-col items-center">
