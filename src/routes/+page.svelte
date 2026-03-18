@@ -1,11 +1,19 @@
 <script>
+	import { enhance } from '$app/forms';
+
     let { data } = $props();
+
+    // const handleSubmit = enhance(async ({ result }) => {
+    //     if (result.type === 'success') {
+    //         alert('Pulse posted');
+    //     }
+    // })
 </script>
 
 <div class="min-h-screen bg-gray-900 text-white p-8 flex flex-col items-center">
     <h1 class="text-4xl font-bold mb-8 text-cyan-400">Server Pulse</h1>
     
-    <form method="POST">
+    <form method="POST" use:enhance>
         <button class="bg-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-lg font-bold transition">
             Send Heartbeat Pulse
         </button>
